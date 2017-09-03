@@ -1,0 +1,9 @@
+version: '2'
+services:
+  main:
+    image: opencv-build
+    build: .
+    volumes:
+      - .:/source
+    working_dir: /source
+    command: tail -f /dev/null
